@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## react-drum-machine
 a drum machine using react 
 
-##live demo
+## live demo
 https://drum-machine-reactjs.netlify.app
 
 ## Available Scripts
