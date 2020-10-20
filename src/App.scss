@@ -1,0 +1,101 @@
+
+$s-size:1.2rem;
+$m-size:1.6rem;
+$l-size:3.2rem;
+$xl-size:4.8rem;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $m-size;
+    background-color: #3d5a80;
+}
+button{
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor: default;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col{
+    flex-direction: column;
+}
+
+#app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    max-width: 600px;
+}
+
+#drum-machine{
+    width: 100%;
+    border-radius: $m-size;
+    padding: $l-size;
+    background-color: #98c1d9;
+    justify-content: space-between;
+}
+
+#display{
+    height:150px;
+    width: 150px;
+    background-color:#293241;
+    text-align: center;
+    color: white;
+    border-radius: 2rem;
+}
+
+.drum-container{
+    max-width: 300px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0.5rem;
+}
+
+.drum-pad{
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 2px black solid;
+    padding: $m-size;
+}
+
+#title,#made-by{
+    margin: $m-size;
+    color: white;
+    font-size: $l-size;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#volume{
+    text-align: center;
+    margin-top: $m-size;
+}
+
+@media(max-width:500px){
+    #drum-machine{
+        flex-direction: column;
+        width: 60%;
+    }
+    .drum-container{
+        margin-top: $l-size;
+    }
+    #title,#made-by{
+        font-size: $m-size;
+    }
+}
